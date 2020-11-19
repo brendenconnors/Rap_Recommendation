@@ -8,7 +8,7 @@ import pandas as pd
 from gensim.models.doc2vec import Doc2Vec
 import numpy as np
 
-def clean_features(df,keep=['syllables_per_line','syllables_variance','lexical_diversity','sentiment','tokens_per_second'],std_drop=3):
+def clean_features(df,keep=['syllables_per_line','syllables_variance','lexical_diversity','sentiment','syllables_per_second'],std_drop=3):
     """
     This function will get our feature data cleaned and ready to compute similarities.
 
@@ -41,7 +41,7 @@ def clean_features(df,keep=['syllables_per_line','syllables_variance','lexical_d
     
     return df
 
-def feature_similarity(song_id,df,time_exclusion=True,time_columns=['tokens_per_second'],std_drop=3):
+def feature_similarity(song_id,df,time_exclusion=True,time_columns=['syllables_per_second'],std_drop=3):
     """
     This function computes similarity between songs based on their euclidean distance from one another.
     The code assumes that the dataframe is standardized and rows with values greater than 5 stds from the mean are dropped.
@@ -70,6 +70,10 @@ def feature_similarity(song_id,df,time_exclusion=True,time_columns=['tokens_per_
     
     """
     #If we want to include songs that we don't know their duration, drop time-dependent features
+    if df[df.index==song_id][time_columns[0]].isna().values[0]:
+        time_exclusion=False
+        
+
     if time_exclusion==True: 
         df = df.dropna(subset=time_columns)
     else:
