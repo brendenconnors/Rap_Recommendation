@@ -15,6 +15,8 @@
   4. Extract and store features from the lyrics. Done using Lyric_Features.ipynb
   5. Get and store a Doc2Vec vector representation of the lyrics using Doc2Vec_Representation.ipynb
 
+The final data contains in ~115,000 songs from ~1100 different artists.
+
 ### Recommendation
   Similarity scores are calculated amongst the Doc2Vec vectors and extracted feature vectors seperately. Doc2Vec similarity scores are computed using the cosine similarity between document vectors, and the euclidean distance is used to measure similarity in our feture vectors (dimensionality is small so 'curse of dimensionality' is not relevant).These two similarity scores are combined into one final similarity score which fuels our recommendations. All functions to compute similarity, return recommendations, etc. are found in recommendation_engine.py. Look at the parameters if you want to tinker with how you recommendations are calculated and weighted.
   
