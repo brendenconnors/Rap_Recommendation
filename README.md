@@ -13,3 +13,15 @@
   3. Using the song IDs, scrape Genius.com for lyrics, and song durations (if available). Done using Multithreaded_Scraper.py
   4. Extract and store features from the lyrics. Done using Lyric_Features.ipynb
   5. Get and store a Doc2Vec vector representation of the lyrics using Doc2Vec_Representation.ipynb
+
+### Recommendation
+  Similarity scores are calculated amongst the Doc2Vec vectors and extracted feature vectors seperately. Doc2Vec similarity scores are computed using the cosine similarity between document vectors, and the euclidean distance is used to measure similarity in our feture vectors (dimensionality is small so curse of dimensionality is not relevant).These two similarity scores are combined into one final similarity score which fuels our recommendations. All functions to compute similarity, return recommendations, etc. are found in recommendation_engine.py. Look at the parameters if you want to tinker with how you recommendations are calculated and weighted.
+  
+  Recommendation_Final.ipynb is a notebook with some widgets that allows you to get recommendations pretty easily. When loading in a Doc2Vec model, choose from doc2vec_len20.model , doc2vec_len50,... These are Doc2Vec models trained to produce different length document vectors. These different lengths can sometimes result in very different recommendations. Try them all out and see which works best for you. Have some fun seeing what it thinks you may like, I hope you enjoy!
+  
+### Next Steps
+  
+  - Increase our set of song lyrics. Get artists that fell through the cracks. 
+  - Include more genres.
+  - Further cleaning. Scraping Genius results in some files that are not songs (interviews, snippets, poetry,...). Do a better job of removing all of these.
+  - Create a simple web app for users to get recommendations.
