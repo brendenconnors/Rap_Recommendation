@@ -1,4 +1,4 @@
-# Rap_Recommendation
+# Rap Recommendation
 ## A lyric based hip hop recommendation engine
 
 ### Motivation
