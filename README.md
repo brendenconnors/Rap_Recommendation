@@ -24,7 +24,7 @@ The final data contains in ~115,000 songs from ~1100 different artists.
 
 ### Sample Recommendations
 - Recommendations for 'Who Shot Ya?' by The Notorious B.I.G. | Try out 'Slap! Slap! Slap!' by Missy Elliott
-- Recommendations for 'Hard in da Paint' by Waka Flocka Flame | Try out 'Faneto' by Chief Keef *** This is pretty accurate, this is when I knew it wasn't half bad
+- Recommendations for 'Hard in da Paint' by Waka Flocka Flame | Try out 'Faneto' by Chief Keef 
 - Recommendations for 'Gucci Gang' by Lil Pump | Try out 'Life Like Me' by Lil Pump
 
 ### Next Steps
