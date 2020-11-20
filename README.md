@@ -23,9 +23,9 @@ The final data contains in ~115,000 songs from ~1100 different artists.
   Recommendation_Final.ipynb is a notebook with some widgets that allows you to get recommendations pretty easily. When loading in a Doc2Vec model, choose from doc2vec_len20.model , doc2vec_len50,... These are Doc2Vec models trained to produce different length document vectors. These different lengths can sometimes result in very different recommendations. Try them all out and see which works best for you. Have some fun seeing what it thinks you may like, I hope you enjoy!
 
 ### Sample Recommendations
-- Recommendations for Who Shot Ya? by The Notorious B.I.G. | Try out 'Slap! Slap! Slap!' by Missy Elliott
-- Recommendations for Hard in da Paint by Waka Flocka Flame | Try out 'Faneto' by Chief Keef *** This is pretty accurate, this is when I knew it wasn't half bad
-- Recommendations for Gucci Gang by Lil Pump | Try out 'Life Like Me' by Lil Pump
+- Recommendations for 'Who Shot Ya?' by The Notorious B.I.G. | Try out 'Slap! Slap! Slap!' by Missy Elliott
+- Recommendations for 'Hard in da Paint' by Waka Flocka Flame | Try out 'Faneto' by Chief Keef *** This is pretty accurate, this is when I knew it wasn't half bad
+- Recommendations for 'Gucci Gang' by Lil Pump | Try out 'Life Like Me' by Lil Pump
 
 ### Next Steps
   
